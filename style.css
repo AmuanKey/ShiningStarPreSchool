@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+header .logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+header .logo img {
+    width: 100px;
+    height: auto;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section, aside {
+    padding: 50px;
+    text-align: center;
+}
+
+#about {
+    background-color: #ffe082;
+}
+
+#quote {
+    background-color: #dce775;
+    padding: 30px;
+    font-style: italic;
+    border-left: 10px solid #c0ca33;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+#photos {
+    background-color: #64b5f6;
+}
+
+#videos {
+    background-color: #aed581;
+}
+
+#announcements {
+    background-color: #ffcc80;
+}
+
+.photo-gallery img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.video-gallery video {
+    width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.announcement-forum ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.announcement-forum ul li {
+    background-color: #fff3e0;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+#calendar {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+#calendar img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}

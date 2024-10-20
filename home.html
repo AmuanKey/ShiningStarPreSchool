@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Company Name</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .navbar {
+            background-color: #ffcc00;
+        }
+        .navbar-brand img {
+            width: 50px;
+            margin-right: 10px;
+        }
+        .nav-link {
+            color: #ff5722 !important;
+        }
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 5px solid #ffcc00;
+            background-color: #e1f5fe;
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            color: #ff5722;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .card {
+            margin: 15px;
+            border: 2px solid #ff5722;
+            border-radius: 15px;
+            background-color: #fff3e0;
+        }
+        .card img {
+            border-radius: 15px 15px 0 0;
+        }
+        .carousel-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .img-fluid {
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 100%; /* Ensures images are responsive */
+            height: auto;
+        }
+        iframe {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%; /* Full width on all devices */
+            max-width: 560px; /* Max width for larger screens */
+            height: 315px;
+        }
+        @media (max-width: 768px) {
+            .section h2 {
+                font-size: 2em; /* Smaller header on mobile */
+            }
+            .carousel-item {
+                flex-direction: column; /* Stack cards on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">
+        <img src="logo.png" class="rounded-circle border border-primary" alt="Company Logo">
+        ShiningStar
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="each.html">Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="#video">Video</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div id="about" class="section">
+    <h2>Welcome to ShiningStar!</h2>
+    <p>"Discover the joy of learning with us—where the best and most affordable education for children meets trust and passion!"</p>
+    <div class="d-flex justify-content-center flex-wrap">
+        <img src="./img/kid1.jpg" alt="Showcase 1" class="img-fluid" style="width: 200px; margin: 10px;">
+        <img src="./img/kid2.jpg" alt="Showcase 2" class="img-fluid" style="width: 200px; margin: 10px;">
+        <img src="./img/kid3.jpg" alt="Showcase 3" class="img-fluid" style="width: 200px; margin: 10px;">
+    </div>
+</div>
+
+<div id="team" class="section">
+    <h2>Meet Our Awesome Students!</h2>
+    <div id="teamCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                    <div class="card" style="max-width: 250px;">
+                        <img src="./img/stu1.jpg" class="card-img-top" alt="Staff 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Student Name 1</h5>
+                            <p class="card-text">Achievement 1</p>
+                        </div>
+                    </div>
+                    <div class="card" style="max-width: 250px;">
+                        <img src="./img/stu2.jpg" class="card-img-top" alt="Student 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Student Name 2</h5>
+                            <p class="card-text">Achievement 2</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <div class="card" style="max-width: 250px;">
+                        <img src="./img/stu3.jpg" class="card-img-top" alt="Student 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Student Name 3</h5>
+                            <p class="card-text">Achievement 3</p>
+                        </div>
+                    </div>
+                    <div class="card" style="max-width: 250px;">
+                        <img src="./img/stu4.jpg" class="card-img-top" alt="Student 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Student Name 4</h5>
+                            <p class="card-text">Achievement 4</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#teamCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#teamCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<div id="gallery" class="section">
+    <h2>Our Fun Activities!</h2>
+    <div class="d-flex justify-content-center flex-wrap">
+        <img src="business1.jpg" alt="Business Activity 1" class="img-fluid" style="width: 200px; margin: 10px;">
+        <img src="business2.jpg" alt="Business Activity 2" class="img-fluid" style="width: 200px; margin: 10px;">
+        <img src="business3.jpg" alt="Business Activity 3" class="img-fluid" style="width: 200px; margin: 10px;">
+    </div>
+</div>
+
+<div id="video" class="section">
+    <h2>Watch Our Adventure!</h2>
+    <iframe src="https://www.youtube.com/embed/your_video_id" allowfullscreen></iframe>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
